@@ -1,8 +1,11 @@
 # OCC-CLIP ECCV2024
 This repository contains the code and data for the paper ["Model-agnostic Origin Attribution of Generated Images with Few-shot Examples"](https://arxiv.org/pdf/2404.02697) accepted by ECCV 2024.
 ## Overview
+A Simple Demo
+![Simple Demo](teaser.png)
+
 Overview of OCC-CLIP
-<!-- ![Cropa Overview](Cropa.png) -->
+![OCC-CLIP Overview](Flowchat.pdf)
 
 # 🗓 Coming Soon
 - [ ] Code release of our [paper](https://arxiv.org/pdf/2404.02697)
