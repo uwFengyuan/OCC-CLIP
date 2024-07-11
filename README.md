@@ -1,15 +1,16 @@
 # OCC-CLIP ECCV2024
 This repository contains the code and data for the paper ["Model-agnostic Origin Attribution of Generated Images with Few-shot Examples"](https://arxiv.org/pdf/2404.02697) accepted by ECCV 2024.
 ## Overview
-A Simple Demo
-![Simple Demo](Teaser.png)
-
 Overview of OCC-CLIP
 ![OCC-CLIP Overview](Flowchat.png)
 
 # 🗓 Coming Soon
 - [ ] Code release of our [paper](https://arxiv.org/pdf/2404.02697)
 - [ ] Complete Instructions
+
+## Demo
+A Simple Demo
+![Simple Demo](Teaser.png)
 
 ## Requirements
 <!-- The environment.yml file contains the necessary packages to run the code. You can create the environment using the following command:
