@@ -39,9 +39,9 @@ def main():
     parser.add_argument("--n_epoch", type=int,default=200) 
     parser.add_argument("--train_set",type=int, default=1)
     parser.add_argument("--lr",type=float,default=0.001,)
-    parser.add_argument("--save_name",type=str,default='OCC_CLIP', help="Save trained model and test results")
+    parser.add_argument("--save_path",type=str,default='', help="Save trained model and test results")
     parser.add_argument("--epsilon",type=float,default=0.1,)
-    parser.add_argument("--batch",type=int,default=1024, help="batch size for training",)
+    parser.add_argument("--batch",type=int,default=10, help="batch size for training",)
     parser.add_argument("--Use_Attack",action='store_true',help="Use Adversarial Data Augmentation (ADA)",)
     parser.add_argument("--random_epsilon",action='store_true',help="step length of ADA",)
     parser.add_argument("--n_shots",type=int,default=50,help="number of images for training",)
@@ -99,7 +99,7 @@ def main():
         model = nn.DataParallel(model)
     model = model.to(device)        
 
-    overall_path = f'/homes/55/jindong/multiagent/OCC-CLIP/ER_{opt.save_name}/'
+    overall_path = opt.save_path
     overall_path = os.path.join(overall_path, "Shots" + str(opt.n_shots) + f"_{opt.model}{opt.backbone}_{use_attack}")
     overall_path = os.path.join(overall_path, "NEG" + ','.join(opt.train_real) + "_POS" + ','.join(opt.train_target) + "_seed" + str(opt.seed))
     overall_path = os.path.join(overall_path, "TrainSet" + str(opt.train_set) + "_" + str(opt.neg_name) + "_" + str(opt.pos_name))
