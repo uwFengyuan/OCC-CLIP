@@ -34,10 +34,10 @@ python run.py --train_real coco_test --train_target ${TRAINF} --test --test_targ
 ## Clarifications
 This task is very sensitive. We ran it on A40.
 You need to set 
-'''
+```
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
-'''
+```
 to get same experimental results each time.
 
 ## Dataset used in the paper
