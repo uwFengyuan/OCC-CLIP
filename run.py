@@ -38,7 +38,7 @@ def main():
     parser.add_argument("--seed",type=int,default=1, help="number of data used in experiments",)
     parser.add_argument("--n_epoch", type=int,default=200) 
     parser.add_argument("--train_set",type=int, default=1)
-    parser.add_argument("--lr",type=float,default=0.001,)
+    parser.add_argument("--lr",type=float,default=0.0001,)
     parser.add_argument("--save_path",type=str,default='', help="Save trained model and test results")
     parser.add_argument("--epsilon",type=float,default=0.1,)
     parser.add_argument("--batch",type=int,default=10, help="batch size for training",)
