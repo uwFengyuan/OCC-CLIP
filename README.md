@@ -48,16 +48,3 @@ to get same experimental results each time.
 
 ## Acknowledgement
 We would like to thank the authors of the following repositories for their code: https://github.com/KaiyangZhou/CoOp
-
-<!-- ## Citation -->
-<!-- If you find this repository useful, please consider citing our paper:
-```
-@inproceedings{
-luo2024an,
-title={An Image Is Worth 1000 Lies: Transferability of Adversarial Images across Prompts on Vision-Language Models},
-author={Haochen Luo and Jindong Gu and Fengyuan Liu and Philip Torr},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=nc5GgFAvtk}
-}
-``` -->
