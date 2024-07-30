@@ -48,3 +48,16 @@ to get same experimental results each time.
 
 ## Acknowledgement
 We would like to thank the authors of the following repositories for their code: https://github.com/KaiyangZhou/CoOp
+
+## Citation
+If you find this repository useful, please consider citing our paper:
+```
+@misc{liu2024which,
+      title={Which Model Generated This Image? A Model-Agnostic Approach for Origin Attribution}, 
+      author={Fengyuan Liu and Haochen Luo and Yiming Li and Philip Torr and Jindong Gu},
+      year={2024},
+      eprint={2404.02697v2},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
