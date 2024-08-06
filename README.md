@@ -32,9 +32,15 @@ python run.py --train_real coco_test --train_target ${TRAINF} --test --test_targ
 
 
 ## Clarifications
-This task is very sensitive. We ran it on A40.
+This task is very sensitive. We ran it on NVIDIA A40 GPUs.
 You need to set 
 ```
+random.seed(1)
+np.random.seed(1)
+torch.manual_seed(1)
+torch.cuda.manual_seed(1)
+torch.cuda.manual_seed_all(1)
+torch.set_printoptions(precision=8)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 ```
