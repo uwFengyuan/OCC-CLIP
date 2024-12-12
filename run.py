@@ -22,7 +22,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--model", type=str, default="CoOp",help="choose which model to run")
     parser.add_argument("-b", "--backbone", type=str, default='ViT', choices=['RN50', 'ViT', 'NoBB'], 
-                        default="NoBB", help="choose which backbone to run")
+                         help="choose which backbone to run")
     parser.add_argument("--n_ctx",type=int,default=16, help="number of ctx used in experiments",)
     parser.add_argument("--train",action='store_true')
     parser.add_argument("--train_real",nargs="+",
